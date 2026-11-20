@@ -1,0 +1,10 @@
+name: sovereign-route
+displayName: SovereignRoute + AP2
+description: India DPDP/RBI geo-pinned <5ms LLM router with AP2 mandates, x402/MPP billing & 12% FinOps.
+homepage: https://route.srigenmedia.com
+repository: https://github.com/srigenmedia/sovereign-route
+transport:
+  type: streamable-http
+  url: https://route.srigenmedia.com/mcp
+  headers:
+    Authorization: "Bearer ${SOVEREIGN_ROUTE_API_KEY}"

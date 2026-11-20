@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.srigenmedia/sovereign-route",
+  "title": "SovereignRoute + AP2 (Agentic Compute Router & FinOps)",
+  "description": "India DPDP/RBI geo-pinned <5ms LLM router with AP2 mandates, x402/MPP billing & 12% FinOps.",
+  "version": "0.1.0",
+  "websiteUrl": "https://route.srigenmedia.com",
+  "repository": {
+    "url": "https://github.com/srigenmedia/sovereign-route",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/srigenmedia/sovereign-route/main/assets/icon.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://route.srigenmedia.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer API key issued at https://route.srigenmedia.com",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
